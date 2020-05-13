@@ -51,6 +51,9 @@
     <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
     <script src="./plugins/js/jquery/jquery-3.5.1.js"></script>
 
+  <script src="./plugins/js/bootbox/bootbox.min.js"></script>
+  <script src="./plugins/js/bootbox/bootbox.locales.min.js"></script>
+
     <div id="loader">
         <div style="opacity:1.0; text-align: -webkit-center; position: relative; top: 50%; transform: translateY(-50%);">
             <img src="./assets/loader.gif">
