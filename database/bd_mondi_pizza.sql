@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 13-Maio-2020 às 17:04
+-- Generation Time: 13-Maio-2020 às 20:59
 -- Versão do servidor: 5.6.15-log
 -- PHP Version: 5.5.8
 
@@ -32,18 +32,20 @@ CREATE TABLE IF NOT EXISTS `cardapio` (
   `ingredientesCardapio` varchar(100) NOT NULL,
   `tamanhoCardapio` varchar(100) NOT NULL,
   `imagemCardapio` varchar(40) DEFAULT NULL,
+  `tipoCardapio` varchar(40) NOT NULL,
   PRIMARY KEY (`idCardapio`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Extraindo dados da tabela `cardapio`
 --
 
-INSERT INTO `cardapio` (`idCardapio`, `nomeCardapio`, `ingredientesCardapio`, `tamanhoCardapio`, `imagemCardapio`) VALUES
-(1, 'Pizza de Calabresa', 'Calabresa, queijo, tomate, cebola, queijo ralado e azeitona', 'P, M', 'cardapio_1.jpg'),
-(2, 'Pizza de quatro queijos', 'Molho de omate, quijo mussarela, quijo gorgonzola, queijo parmessão, queijo provolone e orégano', 'M, G, GG', 'cardapio_2.png'),
-(3, 'Pizza Portuguesa', 'molho de tomate, queijo, presunto, tomate em rodelas, cebola e ovos cozidos em rodelas', 'P, M, G', 'cardapio_3.jpg'),
-(4, 'Pizza Vegetariana', 'ricota, espinafre, mussarela ralada e tomate', 'PP, P, M', 'cardapio_4.jpg');
+INSERT INTO `cardapio` (`idCardapio`, `nomeCardapio`, `ingredientesCardapio`, `tamanhoCardapio`, `imagemCardapio`, `tipoCardapio`) VALUES
+(1, 'Pizza de Calabresa', 'Calabresa, queijo, tomate, cebola, queijo ralado e azeitona', 'P, M', 'cardapio_1.jpg', 'Salgada'),
+(2, 'Pizza de quatro queijos', 'Molho de omate, quijo mussarela, quijo gorgonzola, queijo parmessão, queijo provolone e orégano', 'M, G, GG', 'cardapio_2.png', 'Salgada'),
+(3, 'Pizza Portuguesa', 'molho de tomate, queijo, presunto, tomate em rodelas, cebola e ovos cozidos em rodelas', 'P, M, G', 'cardapio_3.jpg', 'Salgada'),
+(4, 'Pizza Vegetariana', 'ricota, espinafre, mussarela ralada e tomate', 'PP, P, M', 'cardapio_4.jpg', 'Salgada'),
+(5, 'Pizza de Chocolate', 'Calda de chocolate e raspas de chocolate', 'P, M, G', 'cardapio_5.jpg', 'Doce');
 
 -- --------------------------------------------------------
 

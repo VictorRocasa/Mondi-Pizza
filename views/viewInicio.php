@@ -8,7 +8,7 @@ $inicioConect = new InicioConect();
 
 $stmtSobre = $inicioConect->runQuery("SELECT * FROM sobre");
 $stmtSobre->execute();
-$stmtCardapio = $inicioConect->runQuery("SELECT * FROM cardapio");
+$stmtCardapio = $inicioConect->runQuery("SELECT * FROM cardapio ORDER BY tipoCardapio DESC");
 $stmtCardapio->execute();
 $stmtFiliais = $inicioConect->runQuery("SELECT * FROM filiais ORDER BY localFilial");
 $stmtFiliais->execute();
