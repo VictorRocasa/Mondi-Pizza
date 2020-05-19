@@ -15,7 +15,7 @@
       </li>
     </ul>
     </div>
-    <i class="nav-item fa fa-sign-in" title="Login" id="login" aria-hidden="true" style="color: #707070; margin-right: 15px; cursor: pointer;"></i>
+    <i class="nav-item fa fa-sign-in" title="Login" id="login" aria-hidden="true" onclick="document.location = './views/viewLogin.php'" style="color: #707070; margin-right: 15px; cursor: pointer;"></i>
   </nav>
 
 <div class="jumbotron mobile" style="background-color: #F6F2ED; margin: 0px;">
